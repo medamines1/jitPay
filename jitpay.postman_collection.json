@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "dad14ea2-3876-420a-9ea8-7ed8742fa7fd",
+		"name": "jitpay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17680958"
+	},
+	"item": [
+		{
+			"name": "[MOB] send location",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "[WEB] save & update user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"5a97b952-4ff2-41bf-a194-55aa2a44be17\",\r\n    \"createdOn\": \"2022-02-08T11:44:00.524\",\r\n    \"email\": \"new_email@yopmail.com\",\r\n    \"firstName\": \"new firstName\",\r\n    \"secondName\": \"new secondName\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/jitpay/user-data/save-update-data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"jitpay",
+						"user-data",
+						"save-update-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[WEB] get user data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"5a97b952-4ff2-41bf-a194-55aa2a44be17\",\r\n    \"createdOn\": \"2022-02-08T11:44:00.524\",\r\n    \"email\": \"new_email@yopmail.com\",\r\n    \"firstName\": \"new firstName\",\r\n    \"secondName\": \"new secondName\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/jitpay/user-data/?userId=5a97b952-4ff2-41bf-a194-55aa2a44be17",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"jitpay",
+						"user-data",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "5a97b952-4ff2-41bf-a194-55aa2a44be17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[WEB] get user locations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/jitpay/user-data/user-locations?userId=5a97b952-4ff2-41bf-a194-55aa2a44be17&startDate=2022-9-08T11:44:00.524&endDate=2022-11-08T11:44:00.524",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"jitpay",
+						"user-data",
+						"user-locations"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "5a97b952-4ff2-41bf-a194-55aa2a44be17"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-9-08T11:44:00.524"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-11-08T11:44:00.524"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
