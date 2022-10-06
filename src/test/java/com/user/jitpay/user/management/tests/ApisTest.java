@@ -26,7 +26,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ActiveProfiles("test")
 public class ApisTest {
 
-    private static String USER_ID = "5a97b952-4ff2-41bf-a194-55aa2a44be17";
+    private static final String USER_ID = "5a97b952-4ff2-41bf-a194-55aa2a44be17";
 
     @Autowired
     private RabbitTemplate queueSender;
