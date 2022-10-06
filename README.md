@@ -9,18 +9,20 @@ this repo is used to store the location module.
 
 ## Getting Started
 
+```
+maven clean install
+```
+<p>
+Run the applications using you favorite IDE, you can change the port and the context path using the applications properties.
+</p>
+
 ---------------
 
-### Dependencies
+### Api description
 
----------------
+you can the postman collection to invoke the apis
 
-### Installing
-
----------------
-
-### Executing program
-
+[ Postman Collection](jitpay.postman_collection.json)
 ---------------
 
 ## Authors
